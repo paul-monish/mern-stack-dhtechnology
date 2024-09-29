@@ -136,19 +136,19 @@ int add(a,b){
 // console.log(person);
 
 // Object literal
-const person = {
-  firstName: "John",
-  lastName: "Doe",
-  age: 50,
-  getFullName: function () {
-    return this.firstName + " " + this.lastName;
-  },
-};
+// const person = {
+//   firstName: "John",
+//   lastName: "Doe",
+//   age: 50,
+//   getFullName: function () {
+//     return this.firstName + " " + this.lastName;
+//   },
+// };
 
-for (const [key, value] of Object.entries(person)) {
-  //   console.log(element[1]);
-  console.log(key, "=>", value);
-}
+// for (const [key, value] of Object.entries(person)) {
+//   //   console.log(element[1]);
+//   console.log(key, "=>", value);
+// }
 
 //  for (const a of Object.keys(person) ) {
 //     console.log(person[a]);
@@ -209,3 +209,78 @@ for (const [key, value] of Object.entries(person)) {
 
 // console.log(myObj.myCars.car1);
 // console.log(myObj["myCars"]["car1"]);
+
+
+//-------------String--------------------
+// let str="abcd";
+// console.log(typeof str);
+// console.log(str.length);
+// console.log(str[5]);
+// console.log(str.charAt(-1));
+// console.log(str.charCodeAt(-1));
+// console.log(str.at(4));
+
+
+let text="Apple, Banana, Kiwi";
+// console.log( text.split(",")[1]);
+// console.log(text.slice(-12,-6));
+// console.log(text.substring(-12));
+// console.log(text.substr(7,6));
+
+// console.log(text.toUpperCase());
+// console.log(text.toLowerCase());
+
+let t1="5";
+let t2="Hello world! abc";
+
+// console.log(t1.concat(" ",t2));
+// console.log(t1.trim());
+// console.log(t1.trimEnd());
+// console.log(t1.trimStart());
+
+// console.log(t1.padStart(3,"X"));
+// console.log(t1.padEnd(3,"X"));
+
+// console.log(t2.repeat(2));
+
+
+// console.log(t2.replace("world","Anuj"));
+// console.log(t2.replace(/World/ig,"Anuj"));
+
+// console.log(t2.replaceAll("world","Anuj"));
+
+// ---------search method-----------
+// console.log(t2.indexOf("world",7));
+// console.log(t2.lastIndexOf("world",11));
+
+// console.log(t2.search("world"));
+// console.log(t2.search(/world/));
+
+// console.log(t2.match("world1"));
+// console.log(t2.match(/world/));
+
+// console.log(t2.includes("world",8));
+
+// console.log(t2.startsWith("Hello"));
+// console.log(t2.endsWith("abc"));
+
+
+let a=6;
+let b=6;
+let res=a+b;
+
+// The addition of 5 and 10 is 15
+
+// console.log("The Addition of "+a+" and "+b+" is "+res);
+
+
+console.log(`The Addition of  ${a} and ${b} is ${res}`);
+
+
+
+
+
+
+
+
+
