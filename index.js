@@ -265,16 +265,43 @@ let t2="Hello world! abc";
 // console.log(t2.endsWith("abc"));
 
 
-let a=6;
-let b=6;
-let res=a+b;
+// let a=6;
+// let b=6;
+// let res=a+b;
 
 // The addition of 5 and 10 is 15
 
 // console.log("The Addition of "+a+" and "+b+" is "+res);
 
 
-console.log(`The Addition of  ${a} and ${b} is ${res}`);
+// console.log(`The Addition of  ${a} and ${b} is ${res}`);
+
+// Number
+// NaN
+// let a=100/"ABC";
+// console.log(a);
+// console.log(isNaN(a));
+
+let a="5";
+let b="6";
+let c=0;
+
+
+
+if(a.trim().length==0 || b.trim().length==0){
+    console.log("Please Enter Value!");
+    return;
+}
+else{
+    if(isNaN(5/a) || isNaN(5/b)){
+        console.log("Please Enter Number!");
+        return;
+    }
+    // c=Number(a)+Number(b);
+    // c=parseInt(a)+parseInt(b);
+    c=+a + +b;
+}
+console.log(c);
 
 
 

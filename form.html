@@ -11,15 +11,98 @@
           <input type="password" name="password" placeholder="Enter password"/>
           <input type="submit" value="Login"/>
     </form> -->
+
+    <!-- <input type="text" id="a" name="a" placeholder="Enter a value" />
+    <button onclick="show()">Show</button> -->
+
+    <!-- <form onsubmit="return show(event)">
+      <input type="text" id="a" name="a" placeholder="Enter a value"/>
+      <button type="submit" >Show</button>
+    </form> -->
+    <h1 class="no"></h1>
+    <h2 class="no"></h2>
+    <h3 class="no"></h3>
+    <button type="button" id="show">show</button>
+    <button type="button" id="hide">hide</button>
     <div>
       <h1 id="name"></h1>
     </div>
     <script>
       var a = 5;
-      var b = 6;
-      var c = a + b;
-      var div = document.getElementById("name");
-      div.innerText = c;
+      // var b = 6;
+      // var c = a + b;
+      function view() {
+        var div = document.getElementById("name");
+        div.innerText = a;
+      }
+
+      // var cl=document.getElementsByClassName("no");
+      var cl = document.querySelectorAll(".no");
+
+      let ar = Array.from(cl);
+      // const arr=Array.of(1,2,3);
+
+      // for (const i in ar) {
+      //   if(i%2===0){
+      //     ar[i].innerText="Even";
+      //     ar[i].style.color="red";
+      //    }
+      //    else{
+      //     ar[i].innerText="Odd";
+      //     ar[i].style.color="blue";
+      //    }
+
+      // }
+
+      // function it(item,index,arr){
+      //   console.log(arr);
+      // }
+
+      // ar.forEach((item,index,arr)=>{
+      //   if(index%2===0){
+      //     item.innerText="Even";
+      //     item.style.color="red";
+      //    }
+      //    else{
+      //     item.innerText="Odd";
+      //     item.style.color="blue";
+      //    }
+      // });
+      // [1,2,3,4]=>[2,4,6,8]
+      let newAr = Array.of(1, 2, 3, 4);
+      // let ans=newAr.map((item,index,arr)=>{
+      //   if(index%2===0){
+      //     return item*2;
+      //   }
+      // })
+      let ans = newAr
+        .filter((item, index, arr) => index % 2 == 0)
+        .map((item) => item * 2);
+      console.log(ans);
+
+      // document.getElementById("show").addEventListener("click", view);
+      // document.getElementById("hide").addEventListener("click", function () {
+      //   // var div = document.getElementById("name");
+      //   var div = document.querySelector("#name");
+      //   div.innerText = "";
+      // });
+
+      // function validate(a) {
+      //   if (isNaN(100 / a)) {
+      //     alert("Please Enter Number!");
+      //     return false;
+      //   }
+      //   return true;
+      // }
+      // function show(event) {
+      //   event.preventDefault();
+      //   // let a = document.getElementById("a").value;
+      //   let fd = new FormData(event.target);
+      //   // let a = fd.get("a");
+      //   const data = Object.fromEntries(fd);
+      //   if (!validate(data.a)) return;
+      //   document.getElementById("name").innerText = data.a;
+      // }
     </script>
   </body>
 </html>
